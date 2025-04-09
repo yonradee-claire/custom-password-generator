@@ -1,0 +1,91 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+}
+ 
+h1 {
+  text-align: center;
+  font-family: "Sixtyfour Convergence", sans-serif;
+  /* font-optical-sizing: auto; */
+  font-size: 2rem;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "BLED" 80,
+    "SCAN" 100,
+    "XELA" 47,
+    "YELA" 42;
+}
+
+label {
+  display: block;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+input[type="number"] {
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-left: 10px;
+  width: 60px;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+#result {
+  margin-top: 30px;
+  font-size: 18px;
+  color: #222;
+  background: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  max-width: 100%;
+  word-wrap: break-word;
+}
+
+#copyBtn {
+  margin-top: 10px;
+  background-color: #007bff;
+  color: white;
+  display: none; /*(Initially hidden) Copy Password button now only appears after a password is generated*/
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#copyBtn:hover {
+  background-color: #0056b3;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #f2f2f2;
+  color: #333;
+  font-size: 0.7rem;
+  border-top: 1px dashed #333; /* add the straight line */
+  position: relative; /* or fixed if you want it always at the bottom */
+  bottom: 0;
+  width: 100%;
+}

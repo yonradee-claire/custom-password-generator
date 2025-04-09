@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sixtyfour+Convergence&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <h1>Custom Password Generator</h1>
+
+    <dotlottie-player src="https://lottie.host/21473b23-7820-46ea-80f5-f14a86649fa5/GQBZS7c5XS.lottie"
+        background="transparent" speed="1" style="width: 300px; height: 300px" loop autoplay></dotlottie-player>
+
+    <label>How many LETTERS would you like to have in your password? <input type="number" id="letters" /></label><br />
+    <label>How many NUMBERS would you like to have in your password? <input type="number" id="numbers" /></label><br />
+    <label>How many SYMBOLS would you like to have in your password? <input type="number" id="symbols" /></label><br />
+    <button onclick="generatePassword()">Generate</button>
+  
+    <p id="result"></p>
+
+    <button id="copyBtn" onclick="copyPassword()">Copy Password</button>
+
+    <footer>
+        Created by: Claire @2025
+    </footer>      
+
+    <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+    <script src="generatePassword.js"></script>
+</body>
+</html>
